@@ -1131,12 +1131,12 @@ nav ul li a::after {
     .box {
         margin-bottom: 0;
         width: 33.333%;
-        min-height: 360px;
     }
 }
 
 .box img {
     display: block;
+    max-height: 440px;
 }
 
 .box-1 img {
