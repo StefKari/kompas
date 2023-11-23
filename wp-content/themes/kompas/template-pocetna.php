@@ -17,7 +17,8 @@ get_header();
                     ?>
                     <?php if ($photoNaslovna): ?>
                         <a class="full-height" href="/">
-                            <img src="<?php echo esc_url($photoNaslovna['url']); ?>" alt="<?php echo esc_attr($photoNaslovna['alt']); ?>" />
+                            <img src="<?php echo esc_url($photoNaslovna['url']); ?>"
+                                 alt="<?php echo esc_attr($photoNaslovna['alt']); ?>"/>
                         </a>
                     <?php endif; ?>
                     <div class="bord-1-content">
@@ -93,7 +94,8 @@ get_header();
                         ?>
                         <div class="box">
                             <a href="<?php echo $lokacijaUrl ? $lokacijaUrl : '#'; ?>">
-                                <img class="gray-img" src="<?php echo esc_url($lokacijaPhoto['url']); ?>" alt="<?php echo esc_attr($lokacijaPhoto['alt']); ?>">
+                                <img class="gray-img" src="<?php echo esc_url($lokacijaPhoto['url']); ?>"
+                                     alt="<?php echo esc_attr($lokacijaPhoto['alt']); ?>">
                             </a>
                             <div class="box-more">
                                 <?php if ($lokacijaNaziv): ?>
@@ -127,7 +129,8 @@ get_header();
                 ?>
                 <?php if ($oNamaPhoto): ?>
                     <div class="u-med-1of2">
-                        <img src="<?php echo esc_url($oNamaPhoto['url']); ?>" alt="<?php echo esc_attr($oNamaPhoto['alt']); ?>" />
+                        <img src="<?php echo esc_url($oNamaPhoto['url']); ?>"
+                             alt="<?php echo esc_attr($oNamaPhoto['alt']); ?>"/>
                     </div>
                 <?php endif; ?>
                 <div class="u-med-1of2">
@@ -176,17 +179,18 @@ get_header();
                         <h2><?php echo esc_html($refNaslov); ?></h2>
                     <?php endif; ?>
                     <div class="wrapper">
-                       <!-- <div class="owl-carousel" id="slider1"> -->
-                            <?php if (have_rows('reference_galerija')): ?>
-                                <?php while (have_rows('reference_galerija')): the_row();
-                                    $refPhotoGalerija = get_sub_field('ref_photo_galerija');
-                                    if ($refPhotoGalerija): ?>
-                                        <a href="">
-                                            <img src="<?php echo esc_url($refPhotoGalerija['url']); ?>" alt="<?php echo esc_attr($refPhotoGalerija['alt']); ?>" />
-                                        </a>
-                                    <?php endif; ?>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
+                        <!-- <div class="owl-carousel" id="slider1"> -->
+                        <?php if (have_rows('reference_galerija')): ?>
+                            <?php while (have_rows('reference_galerija')): the_row();
+                                $refPhotoGalerija = get_sub_field('ref_photo_galerija');
+                                if ($refPhotoGalerija): ?>
+                                    <a href="https://rnro.gov.rs/">
+                                        <img src="<?php echo esc_url($refPhotoGalerija['url']); ?>"
+                                             alt="<?php echo esc_attr($refPhotoGalerija['alt']); ?>"/>
+                                    </a>
+                                <?php endif; ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                         <!-- </div> -->
                     </div>
                 </div>
@@ -200,13 +204,13 @@ get_header();
     <div class="flex-wrap">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-         $args = array(
-             'post_type' => 'oglasi',
-             'posts_per_page' => 2,
-             'paged' => $paged
-         );
-         $wp_query = new WP_Query($args);
-         while ($wp_query->have_posts()) : $wp_query->the_post();
+        $args = array(
+            'post_type' => 'oglasi',
+            'posts_per_page' => 2,
+            'paged' => $paged
+        );
+        $wp_query = new WP_Query($args);
+        while ($wp_query->have_posts()) : $wp_query->the_post();
             ?>
             <div class="u-large-1of2 flex-wrap center-all">
                 <div class="u-med-1of2 blog-img">

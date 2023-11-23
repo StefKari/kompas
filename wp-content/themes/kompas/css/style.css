@@ -469,14 +469,14 @@ nav ul li a {
         text-transform: lowercase;
         font-size: 30px;
     }
+
     nav ul li a:first-letter {
         text-transform: capitalize;
     }
 }
 
 nav ul li a:hover {
-    color: var(--main-color);
-    ;
+    color: var(--main-color);;
 }
 
 nav ul li a::before,
@@ -486,8 +486,7 @@ nav ul li a::after {
     border-radius: 1.5px;
     height: 3px;
     width: 0;
-    background-color: var(--main-color);
-    ;
+    background-color: var(--main-color);;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -760,13 +759,11 @@ nav ul li a::after {
 }
 
 .links li a:hover {
-    background-color: var(--main-color);
-    ;
+    background-color: var(--main-color);;
 }
 
 .links li a:hover::after {
-    border-color: transparent transparent transparent var(--main-color);
-    ;
+    border-color: transparent transparent transparent var(--main-color);;
 }
 
 @media only screen and (min-width: 1190px) {
@@ -792,13 +789,13 @@ nav ul li a::after {
     display: block;
 }
 
-@media only screen and (min-width:1200px) {
+@media only screen and (min-width: 1200px) {
     .links-1 a {
         width: 230px;
     }
 }
 
-@media only screen and (min-width:1420px) {
+@media only screen and (min-width: 1420px) {
     .links-1 a {
         width: 280px;
     }
@@ -889,7 +886,7 @@ nav ul li a::after {
 
 .a-active {
     background-color: var(--main-color);
-    !important;
+!important;
 }
 
 .a-active::after {
@@ -900,7 +897,7 @@ nav ul li a::after {
     border-style: solid;
     border-width: 11px 0 0 153px;
     border-color: transparent transparent transparent var(--main-color);
-    !important;
+!important;
     bottom: 50px;
     left: 0;
 }
@@ -1047,6 +1044,7 @@ nav ul li a::after {
         -o-transition: all .5s;
         transition: all .5s;
     }
+
     .gray-img:hover {
         -webkit-filter: grayscale(0%) !important;
         -webkit-transition: all .5s;
@@ -1057,8 +1055,7 @@ nav ul li a::after {
 
 .more {
     font-family: 'Oswald-SemiBold';
-    background-color: var(--main-color);
-    ;
+    background-color: var(--main-color);;
     padding: 13px 15px;
     margin-right: 10px;
     position: relative;
@@ -1071,8 +1068,7 @@ nav ul li a::after {
 
 .more:hover {
     background: #fff;
-    color: var(--main-color);
-    ;
+    color: var(--main-color);;
 }
 
 .more:hover img {
@@ -1086,8 +1082,7 @@ nav ul li a::after {
     height: 0;
     border-style: solid;
     border-width: 11px 0 0 153px;
-    border-color: transparent transparent transparent var(--main-color);
-    ;
+    border-color: transparent transparent transparent var(--main-color);;
     bottom: 49px;
     left: 0;
     -webkit-transition: all .5s;
@@ -1210,8 +1205,7 @@ nav ul li a::after {
 
 .more-1 {
     font-family: 'Oswald-SemiBold';
-    background-color: var(--main-color);
-    ;
+    background-color: var(--main-color);;
     padding: 13px 15px;
     position: relative;
     width: 140px;
@@ -1233,8 +1227,7 @@ nav ul li a::after {
 
 .more-1:hover {
     background: #fff;
-    color: var(--main-color);
-    ;
+    color: var(--main-color);;
 }
 
 .more-1:hover img {
@@ -1248,8 +1241,7 @@ nav ul li a::after {
     height: 0;
     border-style: solid;
     border-width: 11px 0 0 130px;
-    border-color: transparent transparent transparent var(--main-color);
-    ;
+    border-color: transparent transparent transparent var(--main-color);;
     bottom: 46px;
     left: 0;
     -webkit-transition: all .5s;
@@ -1281,6 +1273,7 @@ nav ul li a::after {
         -webkit-filter: grayscale(100%) !important;
         /* Chrome 19+, Safari 6+, Safari 6+ iOS */
     }
+
     .blog img:hover {
         filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
         -webkit-filter: grayscale(0%) !important;
@@ -1383,7 +1376,7 @@ nav ul li a::after {
   animation: gradient 3s ease-in-out infinite, border 1s forwards ease-in-out reverse;*/
 }
 
-.blog-more>span {
+.blog-more > span {
     display: block;
     background: linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
     background: -webkit-linear-gradient(120deg, #6559ae, #ff7159, #6559ae);
@@ -1680,6 +1673,7 @@ body:after,
     .reference-news {
         padding: 50px;
     }
+
     .vision {
         padding: 50px;
     }
@@ -1723,8 +1717,7 @@ body:after,
 
 .gform_wrapper input.button {
     width: 100% !important;
-    background: var(--main-color);
-    ;
+    background: var(--main-color);;
     border: none !important;
     padding: 13px !important;
     color: #fff;
@@ -1796,6 +1789,7 @@ p {
         padding: 10px 50px;
         width: 100%;
     }
+
     .menu-toggle {
         width: 40px;
     }
@@ -2049,6 +2043,7 @@ footer .social {
     .main-banner {
         height: 500px;
     }
+
     .main-banner-projekti {
         height: 500px;
     }
@@ -2428,13 +2423,11 @@ footer .social {
 }
 
 .bord-nav-1 .links-1 a:hover {
-    background-color: var(--main-color);
-    ;
+    background-color: var(--main-color);;
 }
 
 .bord-nav-1 .links-1 a:hover::after {
-    border-color: transparent transparent transparent var(--main-color);
-    ;
+    border-color: transparent transparent transparent var(--main-color);;
 }
 
 .bord-nav-1 .links-1 a:hover {
@@ -2677,10 +2670,20 @@ footer .social {
     padding-top: 80px;
 }
 
-@media only screen (min-width: 768px) {
-    .about_us {
-        padding-top: 100px;
-    }
+@media only screen
+
+(
+min-width:
+
+768
+px
+
+)
+{
+.about_us {
+    padding-top: 100px;
+}
+
 }
 
 
@@ -2734,6 +2737,7 @@ footer .social {
     .order-1 {
         order: 1;
     }
+
     .order-2 {
         order: 2;
     }
@@ -2837,23 +2841,29 @@ footer .social {
     .u-med-full {
         width: 100%;
     }
+
     .u-med-2of3 {
         width: 66.6667%;
     }
+
     .u-med-1of2 {
         width: 50%;
     }
+
     .reference-news .flex-wrap .u-med-1of2 {
         width: 50%;
         margin: 0 auto;
     }
+
     .vision .flex-wrap .u-med-1of2 {
         width: 50%;
         margin: 0 auto;
     }
+
     .u-med-1of3 {
         width: 33.3333%;
     }
+
     .u-med-1of4 {
         width: 25%;
     }
@@ -2871,24 +2881,31 @@ footer .social {
     .u-large-full {
         width: 100%;
     }
+
     .u-large-1of2 {
         width: 50%;
     }
+
     .u-large-1of3 {
         width: 33.3333%;
     }
+
     .u-large-2of3 {
         width: 66.6667%;
     }
+
     .u-large-1of4 {
         width: 25%;
     }
+
     .u-large-3of4 {
         width: 75%;
     }
+
     .u-large-1of5 {
         width: 20%;
     }
+
     .u-large-4of5 {
         width: 80%;
     }
@@ -2914,6 +2931,7 @@ footer .social {
     .desktop-video {
         display: none !important;
     }
+
     .mobile-video {
         display: block;
     }
@@ -2933,6 +2951,7 @@ footer .social {
     .desktop-video-drugi {
         display: none !important;
     }
+
     .mobile-video-drugi {
         display: block;
     }
@@ -2945,12 +2964,12 @@ small {
 
 /* Kari */
 
-.reference-news .wrapper>p {
+.reference-news .wrapper > p {
     color: #000;
     font-size: 22px;
 }
 
-.vision .wrapper>p {
+.vision .wrapper > p {
     color: #000;
     font-size: 22px;
 }
@@ -2973,6 +2992,7 @@ small {
     .about_us .flex-wrap {
         padding: 60px 0 0 0;
     }
+
     .about_us .about_us_img {
         padding: 70px 0 50px 0;
     }
